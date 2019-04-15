@@ -1,0 +1,19 @@
+.rc-animation-loading-text {
+    color: rgba(0, 0, 0, .3);
+    position: relative;
+}
+
+.rc-animation-loading-text:before {
+    animation: rc-animation-loading var(--animationTime) linear;
+    color: #000;
+    content: attr(data-text);
+    max-width: 7em;
+    position: absolute;
+    overflow: hidden;
+}
+
+@keyframes rc-animation-loading {
+    0% {
+        max-width: 0;
+    }
+}

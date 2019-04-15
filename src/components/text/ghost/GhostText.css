@@ -1,0 +1,14 @@
+.rc-animation-ghost {
+    display: flex;
+    list-style: none;
+}
+
+.rc-animation-ghost-li {
+    max-width: 2em;
+    opacity: 1;
+}
+
+.rc-animation-ghost.hidden li.ghost {
+    opacity: 0;
+    max-width: 0;
+}

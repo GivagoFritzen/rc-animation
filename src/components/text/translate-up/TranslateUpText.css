@@ -1,0 +1,52 @@
+.rc-animation-translate-up {
+    height: var(--height);
+    line-height: var(--height);
+    margin: 0;
+    overflow: hidden;
+    padding: 0 var(--height);
+}
+
+.rc-animation-translate-up-ul {
+    animation-name: change;
+    animation-duration: var(--animationTime);
+    animation-iteration-count: infinite;
+    list-style: none;
+    margin-top: 0;
+    -webkit-animation-name: change;
+    -webkit-animation-duration: var(--animationTime);
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes change {
+
+    0%,
+    12.66%,
+    100% {
+        transform: translate(0, 0);
+    }
+
+    16.66%,
+    29.32% {
+        transform: translate(0, -25%);
+    }
+
+    33.32%,
+    45.98% {
+        transform: translate(0, -50%);
+    }
+
+    49.98%,
+    62.64% {
+        transform: translate(0, -75%);
+    }
+
+    66.64%,
+    79.3% {
+        transform: translate(0, -50%);
+    }
+
+    83.3%,
+    95.96% {
+        transform: translate(0, -25%);
+    }
+}
