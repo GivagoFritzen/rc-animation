@@ -10,7 +10,7 @@ export class JumpText extends Component {
 
   static propTypes = {
     delay: PropTypes.bool,
-    text: PropTypes.string.isRequired,
+    text: PropTypes.string,
     transitionTime: PropTypes.number
   }
 
@@ -34,11 +34,11 @@ export class JumpText extends Component {
     let style
     if (delay) {
       style = {
-        'WebkitAnimation': `rc-animation-jump-bounce ${transitionTime}s ease infinite alternate`,
+        'WebkitAnimation': `${styles.rcAnimationJumpBounce} ${transitionTime}s ease infinite alternate`,
         'WebkitAnimationDelay': `${(timeDelay)}s`
       }
     } else {
-      style = { 'WebkitAnimation': `rc-animation-jump-bounce ${transitionTime}s ease infinite alternate` }
+      style = { 'WebkitAnimation': `${styles.rcAnimationJumpBounce} ${transitionTime}s ease infinite alternate` }
     }
 
     return style

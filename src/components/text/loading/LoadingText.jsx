@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './LoadingText.css'
+import styles from './LoadingText.css'
 
 export class LoadingText extends Component {
   static defaultProps = {
@@ -17,6 +17,6 @@ export class LoadingText extends Component {
     const { text, transitionTime } = this.props
     const style = { '--animationTime': `${transitionTime}s` }
 
-    return <p className='rc-animation-loading-text' style={style} data-text={text} >{text}</p>
+    return <p className={styles.rcAnimationLoadingText} style={style} data-text={text} >{text}</p>
   }
 }

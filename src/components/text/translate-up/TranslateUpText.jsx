@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './TranslateUpText.css'
+import style from './TranslateUpText.css'
 
 class Text extends React.Component {
   static propTypes = {
-    text: PropTypes.string.isRequired
+    text: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
   }
 
   render() {
@@ -37,8 +37,8 @@ export class TranslateUpText extends Component {
     }
 
     return (
-      <div className='rc-animation-translate-up' style={styleContainer}>
-        <ul className='rc-animation-translate-up-ul' style={styleUL}>
+      <div className={style.rcAnimationTranslateUp} style={styleContainer}>
+        <ul className={style.rcAnimationTranslateUpUl} style={styleUL}>
           {React.Children.map(children, el => {
             return <Text text={el} />
           })}

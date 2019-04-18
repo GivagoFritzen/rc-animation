@@ -1,23 +1,23 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './PerspectiveText.css'
+import styles from './PerspectiveText.css'
 
 export class PerspectiveText extends Component {
   static propTypes = {
     children: PropTypes.oneOfType([
       PropTypes.element,
-      PropTypes.arrayOf(PropTypes.element),
+      PropTypes.arrayOf(PropTypes.element)
     ]).isRequired
   }
 
   render() {
     const { children } = this.props
     return (
-      <div className='rc-animation-perspective-container'>
+      <div className={styles.rcAnimationPerspectiveContainer}>
         {React.Children.map(children, el => {
           return React.cloneElement(el, {
-            className: 'rc-animation-perspective'
+            className: styles.rcAnimationPerspective
           })
         })}
       </div>

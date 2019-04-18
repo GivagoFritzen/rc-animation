@@ -1,4 +1,4 @@
-.rc-animation-translate-up {
+.rcAnimationTranslateUp {
     height: var(--height);
     line-height: var(--height);
     margin: 0;
@@ -6,7 +6,7 @@
     padding: 0 var(--height);
 }
 
-.rc-animation-translate-up-ul {
+.rcAnimationTranslateUpUl {
     animation-name: change;
     animation-duration: var(--animationTime);
     animation-iteration-count: infinite;

@@ -1,4 +1,4 @@
-.rc-animation-shiny-text {
+.rcAnimationShinyText {
     background: linear-gradient(90deg, #000, #fff, #000);
     background-repeat: no-repeat;
     background-size: 80%;
@@ -8,7 +8,7 @@
     -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
 
-@keyframes rc-animation-shiny-text {
+@keyframes rcAnimationShinyTextKeyFrame {
     0% {
         background-position: -400%;
     }

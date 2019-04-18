@@ -1,9 +1,9 @@
-.rc-animation-loading-text {
+.rcAnimationLoadingText {
     color: rgba(0, 0, 0, .3);
     position: relative;
 }
 
-.rc-animation-loading-text:before {
+.rcAnimationLoadingText:before {
     animation: rc-animation-loading var(--animationTime) linear;
     color: #000;
     content: attr(data-text);
