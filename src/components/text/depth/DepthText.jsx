@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './DepthText.css'
+import styles from './DepthText.css'
 
 export class DepthText extends Component {
   static propTypes = {
@@ -11,6 +11,6 @@ export class DepthText extends Component {
   render() {
     const { text } = this.props
 
-    return <h1 className='rc-animation-depth'>{text}</h1>
+    return <h1 className={styles.rcAnimationDepth}>{text}</h1>
   }
 }

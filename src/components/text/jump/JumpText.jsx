@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './JumpText.css'
+import styles from './JumpText.css'
 
 export class JumpText extends Component {
   static defaultProps = {
@@ -61,12 +61,12 @@ export class JumpText extends Component {
     let textAnimated = null
 
     if (typeof chars === 'string') {
-      textAnimated = <p className='rc-animation-jump' style={this._getStyle()}>{chars}</p>
+      textAnimated = <p className={styles.rcAnimationJump} style={this._getStyle()}>{chars}</p>
     } else {
       textAnimated = <p>
         {(
           chars.map((char, key) => {
-            return <span className='rc-animation-jump' key={key} style={this._getStyle(key + 1)}> {char}</span>
+            return <span className={styles.rcAnimationJump} key={key} style={this._getStyle(key + 1)}> {char}</span>
           })
         )}
       </p>

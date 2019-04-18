@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import './GhostText.css'
+import styles from './GhostText.css'
 
 class Text extends React.Component {
   static propTypes = {
@@ -10,7 +10,7 @@ class Text extends React.Component {
 
   render() {
     const { text } = this.props
-    return <li className='rc-animation-ghost-li'>{text}</li>
+    return <li className={styles.rcAnimationGhostLi}>{text}</li>
   }
 }
 
@@ -22,7 +22,7 @@ class Ghost extends React.Component {
 
   render() {
     const { text, transitionTime } = this.props
-    return <li className='rc-animation-ghost-li ghost' style={{ transition: `all ${transitionTime}s ease-in-out` }}>{text}</li>
+    return <li className={`${styles.rcAnimationGhostLi} ${styles.ghost}`} style={{ transition: `all ${transitionTime}s ease-in-out` }}>{text}</li>
   }
 }
 
@@ -51,7 +51,7 @@ export class GhostText extends Component {
 
     let classHidden = ''
     if (hidden) {
-      classHidden = 'hidden'
+      classHidden = styles.hidden
     }
 
     return classHidden
@@ -61,7 +61,7 @@ export class GhostText extends Component {
     const { children, transitionTime } = this.props
 
     return (
-      <ul className={`rc-animation-ghost ${this._getHidden()}`} onClick={() => this.setState(() => ({ hidden: !this.state.hidden }))} >
+      <ul className={`${styles.rcAnimationGhost} ${this._getHidden()}`} onClick={() => this.setState(() => ({ hidden: !this.state.hidden }))} >
         {React.Children.map(children, el => {
           if (el.type === Text || el.type === Ghost) {
             return React.cloneElement(el, {
