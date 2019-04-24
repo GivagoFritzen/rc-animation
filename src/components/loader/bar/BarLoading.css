@@ -1,0 +1,64 @@
+.rcAnimationBarProgressBar {
+    background-color: #1a1a1a;
+    height: 45px;
+    width: 450px;
+    margin: 50px auto;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+}
+
+.rcAnimationBarProgressBarInner {
+    display: block;
+    height: 45px;
+    width: 0%;
+    background-color: #34c2e3;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+    position: relative;
+    animation: auto-progress 10s infinite linear;
+}
+
+/*  Stripes */
+.rcAnimationStripes {
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg,
+        rgba(255, 255, 255, .15) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, .15) 50%,
+        rgba(255, 255, 255, .15) 75%,
+        transparent 75%,
+        transparent);
+}
+
+.rcAnimationStripes.rcAnimationAnimated {
+    animation: animate-stripes 0.6s linear infinite;
+}
+
+.rcAnimationStripes.rcAnimationAnimated.rcAnimationSlower {
+    animation-duration: 1.25s;
+}
+
+.rcAnimationStripes.rcAnimationReverse {
+    animation-direction: reverse;
+}
+
+@keyframes animate-stripes {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 60px 0;
+    }
+}
+
+@keyframes auto-progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}

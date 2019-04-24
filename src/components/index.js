@@ -1,3 +1,10 @@
+//  Loadings
+export { BarLoading } from './loader/bar/BarLoading.jsx'
+export { DefaultLoading } from './loader/default/DefaultLoading.jsx'
+export { CircleBallLoading } from './loader/circle-ball/CircleBallLoading.jsx'
+export { HorizontalLoading } from './loader/horizontal/HorizontalLoading.jsx'
+
+//  Texts
 export { DepthText } from './text/depth/DepthText.jsx'
 export { GhostText } from './text/ghost/GhostText.jsx'
 export { JumpText } from './text/jump/JumpText.jsx'

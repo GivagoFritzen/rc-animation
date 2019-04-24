@@ -1,0 +1,63 @@
+.rcAnimationHorizontalLoading {
+    height: 40px;
+    text-align: center;
+    width: 50px;
+}
+
+.rcAnimationHorizontalLoading>div {
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    background-color: white;
+    display: inline-block;
+    height: 100%;
+    margin: 0 1px;
+    width: 6px;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+
+.rcAnimationHorizontalLoading .rcAnimationHorizontalLoadingRect2 {
+    animation-delay: -1.1s;
+    -webkit-animation-delay: -1.1s;
+}
+
+.rcAnimationHorizontalLoading .rcAnimationHorizontalLoadingRect3 {
+    animation-delay: -1.0s;
+    -webkit-animation-delay: -1.0s;
+}
+
+.rcAnimationHorizontalLoading .rcAnimationHorizontalLoadingRect4 {
+    animation-delay: -0.9s;
+    -webkit-animation-delay: -0.9s;
+}
+
+.rcAnimationHorizontalLoading .rcAnimationHorizontalLoadingRect5 {
+    animation-delay: -0.8s;
+    -webkit-animation-delay: -0.8s;
+}
+
+@-webkit-keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        -webkit-transform: scaleY(0.4)
+    }
+
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes sk-stretchdelay {
+
+    0%,
+    40%,
+    100% {
+        transform: scaleY(0.4);
+        -webkit-transform: scaleY(0.4);
+    }
+
+    20% {
+        transform: scaleY(1.0);
+        -webkit-transform: scaleY(1.0);
+    }
+}
