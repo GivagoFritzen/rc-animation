@@ -10,6 +10,9 @@
 npm install --save rc-animation
 ```
 
+### Example
+[PlayGround](https://codesandbox.io/s/9o00jr9kxo)
+
 ## Usage
 
 ```jsx
