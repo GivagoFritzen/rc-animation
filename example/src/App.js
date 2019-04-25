@@ -12,7 +12,7 @@ export default class App extends Component {
     return (
       <div>
         {/* LOADINGS */}
-        <BarLoading />
+        <BarLoading backgroundColor='red' height={20} />
         <BarLoading animated reverse slower />
         <CircleBallLoading />
         <CircleBallLoading delay />
@@ -36,7 +36,7 @@ export default class App extends Component {
         <JumpText text='Teste' transitionTime={0.1} />
         <JumpText text='Teste' transitionTime={0.3} delay />
         <LoadingText text='Teste' transitionTime={1} />
-        <NeonText text='Teste' transitionTime={1} />
+        <NeonText backgroundColor='#cfa518' text='Teste' transitionTime={1} />
         <PerspectiveText>
           <p>Teste</p>
           <p>Teste</p>

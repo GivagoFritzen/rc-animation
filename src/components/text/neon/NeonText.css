@@ -1,9 +1,9 @@
 @keyframes rcAnimationNeon {
     from {
         text-shadow:
-            0 0 10px #ff0080,
-            0 0 7.5px #ff0080,
-            0 0 20px #ff0080;
+            0 0 10px var(--backgroundColor),
+            0 0 7.5px var(--backgroundColor),
+            0 0 20px var(--backgroundColor);
     }
 
     to {

@@ -1,10 +1,13 @@
 {
   "name": "rc-animation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "react package animations",
   "author": "Givago Fritzen",
   "license": "MIT",
-  "repository": "Givago Fritzen/rc-animation",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GivagoFritzen/rc-animation"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -14,6 +17,7 @@
   },
   "keywords": [
     "react",
+    "component",
     "animation"
   ],
   "scripts": {
